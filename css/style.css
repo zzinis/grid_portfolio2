@@ -10,7 +10,7 @@ a {
   text-decoration: none; }
 
 body {
-  background: #efefef; }
+  background: #faf6e0; }
 
 #header {
   width: 100%;
@@ -72,12 +72,19 @@ main {
         width: 100%;
         height: 100%;
         background: #fff;
-        padding: 5px; }
+        padding: 5px;
+        text-align: center; }
+        main section .item .inner img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: saturate(30%);
+          margin-bottom: 5px; }
         main section .item .inner p {
-          font: bold 16px/1.3 'arial';
-          margin-bottom: 30px;
+          font: 14px/1 'arial';
           letter-spacing: 1px; }
         main section .item .inner span {
-          font: 14px/1 'arial'; }
+          font: 14px/1 'arial';
+          margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

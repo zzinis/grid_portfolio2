@@ -81,14 +81,22 @@ main{
                 width: 100%; height: 100%;
                 background: #fff; 
                 padding: 5px;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: saturate(30%);
+                    margin-bottom: 5px;
+                }
     
                 p{
-                    font: bold 16px/1.3 'arial';
-                    margin-bottom: 30px;
+                    font: 14px/1 'arial';
                     letter-spacing: 1px;
                 }
                 span{
                     font: 14px/1 'arial';
+                    margin-bottom: 5px;
                 }
             }
             // &:hover{
