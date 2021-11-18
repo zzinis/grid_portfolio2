@@ -83,21 +83,47 @@ main{
                 border-bottom: 1px solid #bbb;
             }
 
-            &:nth-of-type(6){
+            &:nth-of-type(6),&:nth-of-type(11),&:nth-of-type(16){
                 .inner{
                     p{
                         @include Bfont;
+                        i{
+                            position: absolute;
+                            right: 3%;
+                            display: block;
+                        }
                     }
                 }
             }
-            &:nth-of-type(9){
+            &:nth-of-type(9),&:nth-of-type(19){
                 .inner{
                     img{height: 87%;margin-bottom: 8px;}
                     p{
                         font: 30px/1 'Josefin Sans';
                         text-align: left;
                     }
+                    span{
+                        text-align: right;
+                        display: block;
+                        font: 15px/1 'Heebo';
+                        margin-top: 10px;
+                    }
                 }
+            }
+            &:nth-of-type(10){
+                .inner{
+                    // background: #ffebba;
+                    p{
+                        @include Bfont;
+                        writing-mode: vertical-lr;
+                        position: relative;
+                        top: 20%;
+                        left: 50%;
+                        transform: translate(-50%,0);
+                        
+                    }
+
+                } 
             }
             &:nth-of-type(14){
                 .inner{
@@ -107,6 +133,19 @@ main{
                     }
                     span{
                         text-align: left;display: block;
+                    }
+                }
+            }
+            &:nth-of-type(21){
+                .inner{
+                    i{
+                        position: absolute;
+                        left: 3%;
+                        bottom: 3%;
+                        display: block;
+                    }
+                    p{
+                        @include Bfont;
                     }
                 }
             }

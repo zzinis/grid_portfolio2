@@ -71,18 +71,38 @@ main {
         border-left: 1px solid #bbb; }
       main section .item:nth-of-type(19), main section .item:nth-of-type(23), main section .item:nth-of-type(24), main section .item:nth-of-type(25) {
         border-bottom: 1px solid #bbb; }
-      main section .item:nth-of-type(6) .inner p {
+      main section .item:nth-of-type(6) .inner p, main section .item:nth-of-type(11) .inner p, main section .item:nth-of-type(16) .inner p {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         font: 20px/1 'Heebo';
         letter-spacing: 2px; }
-      main section .item:nth-of-type(9) .inner img {
+        main section .item:nth-of-type(6) .inner p i, main section .item:nth-of-type(11) .inner p i, main section .item:nth-of-type(16) .inner p i {
+          position: absolute;
+          right: 3%;
+          display: block; }
+      main section .item:nth-of-type(9) .inner img, main section .item:nth-of-type(19) .inner img {
         height: 87%;
         margin-bottom: 8px; }
-      main section .item:nth-of-type(9) .inner p {
+      main section .item:nth-of-type(9) .inner p, main section .item:nth-of-type(19) .inner p {
         font: 30px/1 'Josefin Sans';
         text-align: left; }
+      main section .item:nth-of-type(9) .inner span, main section .item:nth-of-type(19) .inner span {
+        text-align: right;
+        display: block;
+        font: 15px/1 'Heebo';
+        margin-top: 10px; }
+      main section .item:nth-of-type(10) .inner p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font: 20px/1 'Heebo';
+        letter-spacing: 2px;
+        writing-mode: vertical-lr;
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0); }
       main section .item:nth-of-type(14) .inner p {
         position: relative;
         top: 50%;
@@ -93,6 +113,17 @@ main {
       main section .item:nth-of-type(14) .inner span {
         text-align: left;
         display: block; }
+      main section .item:nth-of-type(21) .inner i {
+        position: absolute;
+        left: 3%;
+        bottom: 3%;
+        display: block; }
+      main section .item:nth-of-type(21) .inner p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font: 20px/1 'Heebo';
+        letter-spacing: 2px; }
       main section .item .inner {
         width: 100%;
         height: 100%;
