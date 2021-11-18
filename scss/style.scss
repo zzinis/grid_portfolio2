@@ -1,6 +1,14 @@
 @charset "utf-8";
 @import "reset";
 
+@mixin Bfont {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font: 20px/1 'Heebo';
+    letter-spacing: 2px;    
+}
+
 #header{
     width: 100%;
     position: relative;
@@ -48,6 +56,9 @@ main{
             &:nth-of-type(2){
                 width: 60%;
                 height: 400px;
+                .inner{
+                    img{height: 90%;}
+                }
             }
             &:nth-of-type(3),&:nth-of-type(5),&:nth-of-type(8),&:nth-of-type(11),&:nth-of-type(15),&:nth-of-type(16),&:nth-of-type(20),&:nth-of-type(21),&:nth-of-type(24),&:nth-of-type(25){
                 height: 100px;
@@ -70,7 +81,34 @@ main{
             }
             &:nth-of-type(19), &:nth-of-type(23), &:nth-of-type(24), &:nth-of-type(25){
                 border-bottom: 1px solid #bbb;
+            }
 
+            &:nth-of-type(6){
+                .inner{
+                    p{
+                        @include Bfont;
+                    }
+                }
+            }
+            &:nth-of-type(9){
+                .inner{
+                    img{height: 87%;margin-bottom: 8px;}
+                    p{
+                        font: 30px/1 'Josefin Sans';
+                        text-align: left;
+                    }
+                }
+            }
+            &:nth-of-type(14){
+                .inner{
+                    p{
+                        @include Bfont;
+                        font-size: 60px;
+                    }
+                    span{
+                        text-align: left;display: block;
+                    }
+                }
             }
 
 
@@ -89,15 +127,22 @@ main{
                     filter: saturate(30%);
                     margin-bottom: 5px;
                 }
+                .txt{
+                    width: 100%;
+                    height: 10%;
+                    text-align: center;
+                    p{
+                        font: 14px/1 'Heebo';
+                        letter-spacing: 1px;
+                    }
+                    span{
+                        font: 14px/1 'Heebo';
+                        margin-bottom: 5px;
+                    }
+
+                }
     
-                p{
-                    font: 14px/1 'arial';
-                    letter-spacing: 1px;
-                }
-                span{
-                    font: 14px/1 'arial';
-                    margin-bottom: 5px;
-                }
+                
             }
             // &:hover{
             //     transform: scale(0.9);

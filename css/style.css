@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Josefin+Sans&family=Open+Sans&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -52,6 +53,8 @@ main {
       main section .item:nth-of-type(2) {
         width: 60%;
         height: 400px; }
+        main section .item:nth-of-type(2) .inner img {
+          height: 90%; }
       main section .item:nth-of-type(3), main section .item:nth-of-type(5), main section .item:nth-of-type(8), main section .item:nth-of-type(11), main section .item:nth-of-type(15), main section .item:nth-of-type(16), main section .item:nth-of-type(20), main section .item:nth-of-type(21), main section .item:nth-of-type(24), main section .item:nth-of-type(25) {
         height: 100px; }
       main section .item:nth-of-type(6), main section .item:nth-of-type(12), main section .item:nth-of-type(22) {
@@ -68,6 +71,28 @@ main {
         border-left: 1px solid #bbb; }
       main section .item:nth-of-type(19), main section .item:nth-of-type(23), main section .item:nth-of-type(24), main section .item:nth-of-type(25) {
         border-bottom: 1px solid #bbb; }
+      main section .item:nth-of-type(6) .inner p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font: 20px/1 'Heebo';
+        letter-spacing: 2px; }
+      main section .item:nth-of-type(9) .inner img {
+        height: 87%;
+        margin-bottom: 8px; }
+      main section .item:nth-of-type(9) .inner p {
+        font: 30px/1 'Josefin Sans';
+        text-align: left; }
+      main section .item:nth-of-type(14) .inner p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font: 20px/1 'Heebo';
+        letter-spacing: 2px;
+        font-size: 60px; }
+      main section .item:nth-of-type(14) .inner span {
+        text-align: left;
+        display: block; }
       main section .item .inner {
         width: 100%;
         height: 100%;
@@ -80,11 +105,15 @@ main {
           object-fit: cover;
           filter: saturate(30%);
           margin-bottom: 5px; }
-        main section .item .inner p {
-          font: 14px/1 'arial';
-          letter-spacing: 1px; }
-        main section .item .inner span {
-          font: 14px/1 'arial';
-          margin-bottom: 5px; }
+        main section .item .inner .txt {
+          width: 100%;
+          height: 10%;
+          text-align: center; }
+          main section .item .inner .txt p {
+            font: 14px/1 'Heebo';
+            letter-spacing: 1px; }
+          main section .item .inner .txt span {
+            font: 14px/1 'Heebo';
+            margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
