@@ -178,6 +178,14 @@ main{
                     }
                 }
             }
+            &:nth-of-type(22){
+                .inner{
+                    p{
+                        @include Bfont;
+                        font-size: 55px;
+                    }
+                }
+            }
 
 
 
