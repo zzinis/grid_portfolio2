@@ -9,31 +9,9 @@
     letter-spacing: 2px;    
 }
 
-#header{
-    width: 100%;
-    position: relative;
-    .inner{
-        width: 1180px;
-        margin: 0 auto;
-        h1{
-            a{
-                display: block;
-                text-align: center;
-                font: bold 24px/1 'arial';
-                color: #111;
-                margin-top: 50px;
-                margin-bottom: 10px;
-            }
-        }
-        p{
-            text-align: center;
-            font: 14px/1 'arial';
-        }
-    }
-}
 
 main{
-    width: 100%; padding: 4vw;
+    width: 100%; 
 
     section{
         width: 100%; 
@@ -52,38 +30,70 @@ main{
             border-top: 1px solid #bbb;
 
             transition: 0.5s;
-
             &:nth-of-type(2){
+                width: 100%;
+                height: 100px;
+                .inner .txt p{
+                    font: 60px/1 'Heebo';
+                    text-align: left;
+                    padding: 20px 0;
+                }
+            }
+
+            &:nth-of-type(3){
                 width: 60%;
                 height: 400px;
                 .inner{
                     img{height: 90%;}
                 }
             }
-            &:nth-of-type(3),&:nth-of-type(5),&:nth-of-type(8),&:nth-of-type(11),&:nth-of-type(15),&:nth-of-type(16),&:nth-of-type(20),&:nth-of-type(21),&:nth-of-type(24),&:nth-of-type(25){
+            &:nth-of-type(4), &:nth-of-type(15){
+                height: 400px;
+            }
+            &:nth-of-type(5){
+                height: 500px;
+                .inner .wrap{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    padding: 10px;
+                    span{
+                        display: flex;
+                        justify-content: space-between;
+                        font: 15px/1 'Heebo';
+                        margin-bottom: 10px;
+                        strong{
+                            font: 15px/1 'Heebo';
+                        }
+                    }
+                    img{
+                        object-fit: cover;
+                    }
+                    p{
+                        font: 15px/1.3 'Heebo';
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &:nth-of-type(7),&:nth-of-type(9),&:nth-of-type(12),&:nth-of-type(16),&:nth-of-type(17),&:nth-of-type(21),&:nth-of-type(22),&:nth-of-type(25),&:nth-of-type(26){
                 height: 100px;
             }
-            &:nth-of-type(6),&:nth-of-type(12),&:nth-of-type(22){
+            &:nth-of-type(7),&:nth-of-type(13),&:nth-of-type(23){
                 width: 40%; 
             }
-            &:nth-of-type(9),&:nth-of-type(18){
+            &:nth-of-type(10){
                 width: 40%; height: 400px;
             }
-            &:nth-of-type(10),&:nth-of-type(17){
+            &:nth-of-type(11),&:nth-of-type(18){
                 height: 400px;
             }
             &:nth-of-type(19){
                 width: 40%; height: 600px;
             }
 
-            &:nth-of-type(2), &:nth-of-type(7), &:nth-of-type(12), &:nth-of-type(13), &:nth-of-type(19){
-                border-left: 1px solid #bbb;
-            }
-            &:nth-of-type(19), &:nth-of-type(23), &:nth-of-type(24), &:nth-of-type(25){
-                border-bottom: 1px solid #bbb;
-            }
-
-            &:nth-of-type(6),&:nth-of-type(11),&:nth-of-type(16){
+            &:nth-of-type(7),&:nth-of-type(12),&:nth-of-type(17){
                 .inner{
                     p{
                         @include Bfont;
@@ -95,7 +105,35 @@ main{
                     }
                 }
             }
-            &:nth-of-type(9),&:nth-of-type(19){
+            &:nth-of-type(8){
+                .inner{
+                    text-align: right;
+                    padding: 20px;
+                    
+                    p{
+                        border-top: 3px solid #111;
+                        font: bold 17px/1 'Heebo';
+                        margin-bottom: 5px;
+                        padding-top: 5px;
+                    }
+                    h2{
+                        font: bold 45px/1 'Heebo';
+                        letter-spacing: -5px;
+                    }
+                    h3{
+                        font: bold 30px/1 'Heebo';
+                        letter-spacing: -2px;
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        font: bold 14px/1 'Heebo';
+                        display: block;
+                        border-bottom: 3px solid #111;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+            &:nth-of-type(10),&:nth-of-type(19){
                 .inner{
                     img{height: 87%;margin-bottom: 8px;}
                     p{
@@ -110,7 +148,7 @@ main{
                     }
                 }
             }
-            &:nth-of-type(10){
+            &:nth-of-type(11){
                 .inner{
                     // background: #ffebba;
                     p{
@@ -150,35 +188,7 @@ main{
                 }
             }
 
-            &:nth-of-type(7){
-                .inner{
-                    text-align: right;
-                    padding: 20px;
-                    
-                    p{
-                        border-top: 3px solid #111;
-                        font: bold 17px/1 'Heebo';
-                        margin-bottom: 5px;
-                        padding-top: 5px;
-                    }
-                    h2{
-                        font: bold 45px/1 'Heebo';
-                        letter-spacing: -5px;
-                    }
-                    h3{
-                        font: bold 30px/1 'Heebo';
-                        letter-spacing: -2px;
-                        margin-bottom: 5px;
-                    }
-                    span{
-                        font: bold 14px/1 'Heebo';
-                        display: block;
-                        border-bottom: 3px solid #111;
-                        padding-bottom: 5px;
-                    }
-                }
-            }
-            &:nth-of-type(22){
+            &:nth-of-type(23){
                 .inner{
                     p{
                         @include Bfont;
@@ -186,8 +196,9 @@ main{
                     }
                 }
             }
-
-
+            &:nth-of-type(24){
+                height: 300px;
+            }
 
 
 
