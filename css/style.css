@@ -190,7 +190,7 @@ main {
         background: #fff;
         padding: 5px;
         text-align: center; }
-        main section .item .inner a img {
+        main section .item .inner img {
           width: 100%;
           height: 100%;
           object-fit: cover;
