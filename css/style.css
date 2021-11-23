@@ -58,7 +58,7 @@ main {
           font: 15px/1 'Heebo';
           margin-bottom: 10px; }
           main section .item:nth-of-type(5) .inner .wrap span i, main section .item:nth-of-type(15) .inner .wrap span i, main section .item:nth-of-type(18) .inner .wrap span i, main section .item:nth-of-type(20) .inner .wrap span i, main section .item:nth-of-type(22) .inner .wrap span i {
-            margin-right: 60px; }
+            margin-right: 70px; }
           main section .item:nth-of-type(5) .inner .wrap span strong, main section .item:nth-of-type(15) .inner .wrap span strong, main section .item:nth-of-type(18) .inner .wrap span strong, main section .item:nth-of-type(20) .inner .wrap span strong, main section .item:nth-of-type(22) .inner .wrap span strong {
             font: 15px/1 'Heebo'; }
           main section .item:nth-of-type(5) .inner .wrap span h2, main section .item:nth-of-type(15) .inner .wrap span h2, main section .item:nth-of-type(18) .inner .wrap span h2, main section .item:nth-of-type(20) .inner .wrap span h2, main section .item:nth-of-type(22) .inner .wrap span h2 {
@@ -206,5 +206,45 @@ main {
           main section .item .inner .txt span {
             font: 14px/1 'Heebo';
             margin-bottom: 5px; }
+
+@media screen and (max-width: 1179px) {
+  main section .item-sizer {
+    width: 33.333%;
+    height: 0px;
+    opacity: 0; }
+  main section .item {
+    width: 33.333%; }
+    main section .item:nth-of-type(2) {
+      width: 100%;
+      height: 100px; }
+      main section .item:nth-of-type(2) .inner .txt p {
+        font: 55px/1 'Heebo'; }
+    main section .item:nth-of-type(3), main section .item:nth-of-type(7), main section .item:nth-of-type(10), main section .item:nth-of-type(13), main section .item:nth-of-type(19) {
+      width: 66.666%; }
+    main section .item:nth-of-type(15) .inner .wrap, main section .item:nth-of-type(18) .inner .wrap, main section .item:nth-of-type(22) .inner .wrap {
+      padding: 5px; }
+      main section .item:nth-of-type(15) .inner .wrap span, main section .item:nth-of-type(18) .inner .wrap span, main section .item:nth-of-type(22) .inner .wrap span {
+        justify-content: initial; }
+        main section .item:nth-of-type(15) .inner .wrap span i, main section .item:nth-of-type(18) .inner .wrap span i, main section .item:nth-of-type(22) .inner .wrap span i {
+          margin-right: 30px;
+          margin-left: 5px; }
+        main section .item:nth-of-type(15) .inner .wrap span h2, main section .item:nth-of-type(18) .inner .wrap span h2, main section .item:nth-of-type(22) .inner .wrap span h2 {
+          margin-left: 5px; }
+    main section .item:nth-of-type(11) .inner {
+      padding: 50px 30px; }
+      main section .item:nth-of-type(11) .inner p {
+        font: 25px/1 'Heebo';
+        margin-bottom: 40px; }
+    main section .item:nth-of-type(14) .inner p {
+      font-size: 40px; }
+    main section .item:nth-of-type(6) {
+      width: 66.666%; }
+    main section .item:nth-of-type(15) {
+      height: 500px; }
+    main section .item:nth-of-type(23) {
+      width: 33.33%;
+      height: 300px; }
+      main section .item:nth-of-type(23) .inner p {
+        font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
