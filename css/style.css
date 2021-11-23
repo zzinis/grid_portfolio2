@@ -184,18 +184,18 @@ main {
         text-align: left; }
         main section .item:nth-of-type(22) .inner .wrap span i {
           margin-left: 6px; }
+      main section .item a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(30%);
+        margin-bottom: 5px; }
       main section .item .inner {
         width: 100%;
         height: 100%;
         background: #fff;
         padding: 5px;
         text-align: center; }
-        main section .item .inner img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          filter: saturate(30%);
-          margin-bottom: 5px; }
         main section .item .inner .txt {
           width: 100%;
           height: 10%;
@@ -206,6 +206,31 @@ main {
           main section .item .inner .txt span {
             font: 14px/1 'Heebo';
             margin-bottom: 5px; }
+
+.pop {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 100px;
+  z-index: 4; }
+  .pop img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .pop iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .pop span {
+    font: bold 14px/1 'arial';
+    color: #fff;
+    position: absolute;
+    top: 55px;
+    right: 100px;
+    cursor: pointer; }
 
 @media screen and (max-width: 1179px) {
   main {
