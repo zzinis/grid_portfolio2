@@ -248,21 +248,22 @@ main{
                 }
             }
 
-            a{
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    filter: saturate(30%);
-                    margin-bottom: 5px;
-                }
-            }
+
 
             .inner{
                 width: 100%; height: 100%;
                 background: #fff; 
                 padding: 5px;
                 text-align: center;
+                a{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        filter: saturate(30%);
+                        margin-bottom: 5px;
+                    }
+                }
                 
                 .txt{
                     width: 100%;

@@ -184,18 +184,18 @@ main {
         text-align: left; }
         main section .item:nth-of-type(22) .inner .wrap span i {
           margin-left: 6px; }
-      main section .item a img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: saturate(30%);
-        margin-bottom: 5px; }
       main section .item .inner {
         width: 100%;
         height: 100%;
         background: #fff;
         padding: 5px;
         text-align: center; }
+        main section .item .inner a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: saturate(30%);
+          margin-bottom: 5px; }
         main section .item .inner .txt {
           width: 100%;
           height: 10%;
