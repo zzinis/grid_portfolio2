@@ -1,7 +1,11 @@
 $("body").on("click", "section .item", function(e){
     e.preventDefault();
 
-    let imgSrc = $(this).children("a").attr("href");
+    let imgSrc = $(this).find("a").attr("href");
+    var obj ={
+        func : function(){}
+    };
+
 
     $("body").append(
         $("<div class = 'pop'>")
