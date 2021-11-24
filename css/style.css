@@ -65,8 +65,12 @@ main {
             border: 1px solid #333;
             border-radius: 10px;
             padding: 5px; }
-        main section .item:nth-of-type(5) .inner .wrap img, main section .item:nth-of-type(15) .inner .wrap img, main section .item:nth-of-type(18) .inner .wrap img, main section .item:nth-of-type(20) .inner .wrap img, main section .item:nth-of-type(22) .inner .wrap img {
-          object-fit: cover; }
+        main section .item:nth-of-type(5) .inner .wrap a, main section .item:nth-of-type(15) .inner .wrap a, main section .item:nth-of-type(18) .inner .wrap a, main section .item:nth-of-type(20) .inner .wrap a, main section .item:nth-of-type(22) .inner .wrap a {
+          width: 100%;
+          height: 100%; }
+          main section .item:nth-of-type(5) .inner .wrap a img, main section .item:nth-of-type(15) .inner .wrap a img, main section .item:nth-of-type(18) .inner .wrap a img, main section .item:nth-of-type(20) .inner .wrap a img, main section .item:nth-of-type(22) .inner .wrap a img {
+            width: 100%;
+            height: 100%; }
         main section .item:nth-of-type(5) .inner .wrap p, main section .item:nth-of-type(15) .inner .wrap p, main section .item:nth-of-type(18) .inner .wrap p, main section .item:nth-of-type(20) .inner .wrap p, main section .item:nth-of-type(22) .inner .wrap p {
           font: 15px/1.3 'Heebo';
           margin-top: 10px; }
@@ -189,7 +193,7 @@ main {
         background: #fff;
         padding: 5px;
         text-align: center; }
-        main section .item .inner img {
+        main section .item .inner a img {
           width: 100%;
           height: 100%;
           object-fit: cover;
